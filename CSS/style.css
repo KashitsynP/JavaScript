@@ -1,0 +1,76 @@
+.item-list {
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid black;
+    border-radius: 0.2em;
+    background-color: rgb(247, 212, 196);
+}
+#doText {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#main {
+    display: grid;
+    justify-content: center;
+    position:static;
+    font-size: 18px;
+    font-weight: bold;
+}
+#delDoneAll {
+    position:absolute;
+    right: 25px;
+    top: 50px;
+    color: red;
+    background-color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+#save {
+    position:absolute;
+    right: 55px;
+    top: 50px;
+    background-color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+#delDone {
+    color: red;
+    background-color: rgb(243, 169, 146);
+    border: none;
+    cursor: pointer;
+    float: right;
+    height: 0px;
+}
+#add {
+    position:relative;
+    right: 0px;
+    bottom: -1px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0.2em;
+    cursor: pointer;
+    color: green;
+    height: 22px;
+    vertical-align:baseline;
+}
+#item-input {
+    color: blue;
+    width: 92%;
+    border: 1px solid black;
+    border-radius: 0.2em;
+    height: 18px;
+}
+.list {
+    margin: 50px auto;
+}
+.done {
+    text-decoration: line-through;
+}
+div div ul li {
+    background-color: rgb(243, 169, 146);
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    list-style-type: none;
+    height: auto;
+}

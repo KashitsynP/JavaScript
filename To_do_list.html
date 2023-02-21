@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список дел</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./JS/script.js"></script>
+</head>
+<body>
+    <div class="list">
+        <p id="main">
+            <span>Список дел</span>
+            <button id="save" onclick="Save()">&#128190;</button>
+            <button id="delDoneAll" onclick="DelAllChecked(event)">&#10006;</button>
+        </p>
+        <div class="item-list">
+            <ul id="item-list-do">
+                <li>
+                    <input onclick="ItemCheck(event)" type="checkbox"/>
+                    <span id="doText">Важное дело №1</span>
+                    <button id="delDone" onclick="ItemDelete(event)">&#10006;</button>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <input id="item-input" type="text" placeholder="Добавьте новое дело"/>
+            <button id="add" onclick="AddItem(event)">&#10010;</button>
+        </div>
+    </div>
+</body>
+</html>
