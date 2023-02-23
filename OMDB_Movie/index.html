@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <h1>Поиск фильмов &#127910;</h1>
+	<form id="search-form">
+        <p>
+		    <label for="title-input">Название фильма</label>
+		    <input type="text" id="title-input" placeholder="Введите название..." name="title-input" required>
+        
+            <label for="type-select">Тип</label>
+            <select id="type-select" name="type-select">
+                <option value="movie">Фильм</option>
+                <option value="series">Сериал</option>
+                <option value="episode">Эпизод</option>
+            </select>
+        </p>
+		<button id="submit" type="submit">Найти</button>
+	</form>
+	<div id="result-container"></div>
+	<div id="details-container"></div>
+    
+
+<script src="./script/script.js"></script>
+
+</body>
+</html>
